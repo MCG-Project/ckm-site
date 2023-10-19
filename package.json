@@ -22,6 +22,7 @@
     "node": ">=18"
   },
   "devDependencies": {
+    "@netlify/plugin-next": "^0.0.4",
     "file-loader": "^6.2.0"
   }
 }
