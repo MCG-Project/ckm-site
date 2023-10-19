@@ -1,0 +1,7 @@
+#container {
+  position: relative;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  color: #272514;
+  font-family: "Maven Pro", sans-serif;
+}

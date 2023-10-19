@@ -1,0 +1,23 @@
+#footerLogo {
+  height: 3rem;
+  width: 4rem;
+  margin-left: 4rem;
+}
+
+#footerRight {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+#footerContainer {
+  background-color: whitesmoke;
+  height: 4.5rem;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  padding: 5rem;
+}
+
+.main-blue-bg {
+  background-color: #1c2850;
+}
