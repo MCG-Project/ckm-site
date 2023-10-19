@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+The CK&M Site is dedicated to CK&M Property Services.
