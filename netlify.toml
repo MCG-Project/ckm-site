@@ -4,11 +4,7 @@
   publish   = "out_publish"
 
 [build.environment]
-  NETLIFY_NEXT_PLUGIN_SKIP = "true"
-
-
-[[plugins]]
-  package = "@netlify/plugin-next"
-
+    NODE_VERSION = "14"
+    
 [dev]
   command = "npm run dev"
