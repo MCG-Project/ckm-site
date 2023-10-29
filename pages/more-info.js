@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MetaTag } from "../components/MetaTag/MetaTag";
+import { MetaTagSEOData } from "../components/MetaTag/SEOData";
 import { MoreInfoForm } from "../components/MoreInfo/MoreInfoForm";
 import ContactHeroImage from "../public/Images/ContactHeroImage.jpg";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
@@ -29,11 +30,11 @@ export default function MoreInfo() {
   return (
     <>
       <MetaTag
-        tab="More Info"
-        description="XXX"
-        keywords="XXX"
-        socialTitle="XXX"
-        socialDescription="XXX"
+        tab={MetaTagSEOData[3].tab}
+        description={MetaTagSEOData[3].description}
+        keywords={MetaTagSEOData[3].keywords}
+        socialTitle={MetaTagSEOData[3].socialTitle}
+        socialDescription={MetaTagSEOData[3].socialDescription}
         socialImage={ContactHeroImage}
       />
       <Container className="d-flex align-items-center flex-column">
