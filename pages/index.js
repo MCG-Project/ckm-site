@@ -1,5 +1,6 @@
 import React from "react";
 import { MetaTag } from "../components/MetaTag/MetaTag";
+import { MetaTagSEOData } from "../components/MetaTag/SEOData";
 import { HomeMain } from "../components/Home/HomeMain";
 import { HomeVideo } from "../components/Home/HomeVideo";
 import { HomeCard } from "../components/Home/HomeCard";
@@ -12,11 +13,11 @@ export default function Home() {
   return (
     <>
       <MetaTag
-        tab="Home"
-        description="XXX"
-        keywords="XXX"
-        socialTitle="XXX"
-        socialDescription="XXX"
+        tab={MetaTagSEOData[4].tab}
+        description={MetaTagSEOData[4].description}
+        keywords={MetaTagSEOData[4].keywords}
+        socialTitle={MetaTagSEOData[4].socialTitle}
+        socialDescription={MetaTagSEOData[4].socialDescription}
         socialImage={HomeHeroImage}
       />
       <div className="d-flex align-items-center flex-column position-relative">

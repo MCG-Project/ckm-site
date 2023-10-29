@@ -1,5 +1,6 @@
 import React from "react";
 import { MetaTag } from "../components/MetaTag/MetaTag";
+import { MetaTagSEOData } from "../components/MetaTag/SEOData";
 import ForeclosureImage from "../public/Images/ForeclosureImage.jpg";
 import { Services } from "../components/Services/Services";
 import { serviceData } from "../components/Services/ServicesData";
@@ -9,11 +10,11 @@ export default function Foreclosures() {
   return (
     <>
       <MetaTag
-        tab="Foreclosures"
-        description="XXX"
-        keywords="XXX"
-        socialTitle="XXX"
-        socialDescription="XXX"
+        tab={MetaTagSEOData[1].tab}
+        description={MetaTagSEOData[1].description}
+        keywords={MetaTagSEOData[1].keywords}
+        socialTitle={MetaTagSEOData[1].socialTitle}
+        socialDescription={MetaTagSEOData[1].socialDescription}
         socialImage={ForeclosureImage}
       />
       <Services
