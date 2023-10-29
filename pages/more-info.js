@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { MetaTag } from "../components/MetaTag/MetaTag";
 import { MoreInfoForm } from "../components/MoreInfo/MoreInfoForm";
-import Head from "next/head";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container } from "react-bootstrap";
@@ -27,10 +27,14 @@ export default function MoreInfo() {
   }, []);
   return (
     <>
-      <Head>
-        <title>CK&M | More Info</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaTag
+        tab="More Info"
+        description="XXX"
+        keywords="XXX"
+        socialTitle="XXX"
+        socialDescription="XXX"
+        socialImage={ForeclosureImage}
+      />
       <Container className="d-flex align-items-center flex-column">
         <h1 className="mt-3 mb-3 fw-bold">Thank You!</h1>
         <p className="mt-2">

@@ -48,7 +48,7 @@ export function NavBar() {
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item href="/property-sales">Property Sales</Dropdown.Item>
-            <Dropdown.Item href="/foreclosures">foreclosures</Dropdown.Item>
+            <Dropdown.Item href="/foreclosures">Foreclosures</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
         <ColoredLine />

@@ -1,8 +1,9 @@
+import React from "react";
+import { MetaTag } from "../components/MetaTag/MetaTag";
 import { HomeMain } from "../components/Home/HomeMain";
 import { HomeVideo } from "../components/Home/HomeVideo";
 import { HomeCard } from "../components/Home/HomeCard";
 import { HomeAbout } from "../components/Home/HomeAbout";
-import Head from "next/head";
 import Image from "next/image";
 import HomeHeroImage from "../public/Images/HomeHeroImage.jpg";
 import styles from "../styles/Home.module.css";
@@ -10,10 +11,14 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>CK&M | Home</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaTag
+        tab="Home"
+        description="XXX"
+        keywords="XXX"
+        socialTitle="XXX"
+        socialDescription="XXX"
+        socialImage={HomeHeroImage}
+      />
       <div className="d-flex align-items-center flex-column position-relative">
         <Image
           src={HomeHeroImage}

@@ -1,29 +1,29 @@
 import React from "react";
 import { MetaTag } from "../components/MetaTag/MetaTag";
-import PropertySalesImage from "../public/Images/PropertySalesImage.jpg";
+import ForeclosureImage from "../public/Images/ForeclosureImage.jpg";
 import { Services } from "../components/Services/Services";
 import { serviceData } from "../components/Services/ServicesData";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-export default function PropertySales() {
+export default function Foreclosures() {
   return (
     <>
       <MetaTag
-        tab="Property Sales"
+        tab="Foreclosures"
         description="XXX"
         keywords="XXX"
         socialTitle="XXX"
         socialDescription="XXX"
-        socialImage={PropertySalesImage}
+        socialImage={ForeclosureImage}
       />
       <Services
-        title={serviceData[0].title}
-        image={PropertySalesImage}
+        title={serviceData[1].title}
+        image={ForeclosureImage}
         icon={faCheck}
-        altImage={serviceData[0].altImage}
-        mainContent={serviceData[0].mainContent}
-        listContent={serviceData[0].listContent}
-        secondaryContent={serviceData[0].secondaryContent}
+        altImage={serviceData[1].altImage}
+        mainContent={serviceData[1].mainContent}
+        listContent={serviceData[1].listContent}
+        secondaryContent={serviceData[1].secondaryContent}
       />
     </>
   );
