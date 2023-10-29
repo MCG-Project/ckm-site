@@ -1,6 +1,6 @@
 import React from "react";
+import { MetaTag } from "../components/MetaTag/MetaTag";
 import { StepCard } from "../components/WhatWeDo/StepCard";
-import Head from "next/head";
 import Image from "next/image";
 import LogoWhiteSmokeBG from "../public/Images/LogoWhiteSmokeBG.png";
 import { Container, Button } from "react-bootstrap";
@@ -10,10 +10,14 @@ import styles from "../styles/WhatWeDo.module.css";
 export default function WhatWeDo() {
   return (
     <>
-      <Head>
-        <title>CK&M | What We Do</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaTag
+        tab="What We Do"
+        description="XXX"
+        keywords="XXX"
+        socialTitle="XXX"
+        socialDescription="XXX"
+        socialImage={LogoWhiteSmokeBG}
+      />
       <Container className="d-flex align-items-center flex-column">
         <Image
           alt="Logo"
