@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MetaTag } from "../components/MetaTag/MetaTag";
 import { MoreInfoForm } from "../components/MoreInfo/MoreInfoForm";
+import ContactHeroImage from "../public/Images/ContactHeroImage.jpg";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container } from "react-bootstrap";
@@ -33,7 +34,7 @@ export default function MoreInfo() {
         keywords="XXX"
         socialTitle="XXX"
         socialDescription="XXX"
-        socialImage={ForeclosureImage}
+        socialImage={ContactHeroImage}
       />
       <Container className="d-flex align-items-center flex-column">
         <h1 className="mt-3 mb-3 fw-bold">Thank You!</h1>
