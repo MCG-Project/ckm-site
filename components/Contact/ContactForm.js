@@ -180,7 +180,7 @@ export function ContactForm() {
         </Container>
       ) : (
         // Browser
-        <Container>
+        <Container className="d-flex align-items-center flex-column">
           <Form
             className="d-flex align-items-center flex-column w-50"
             id="contact-form"
