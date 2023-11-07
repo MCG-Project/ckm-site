@@ -4,6 +4,7 @@ import { MetaTag } from "../components/MetaTag/MetaTag";
 import { MetaTagSEOData } from "../components/MetaTag/SEOData";
 import ContactHeroImage from "../public/Images/ContactHeroImage.jpg";
 import { ContactMain } from "../components/Contact/ContactMain";
+import { Form, Button, InputGroup, Container } from "react-bootstrap";
 
 export default function Contact() {
   return (
