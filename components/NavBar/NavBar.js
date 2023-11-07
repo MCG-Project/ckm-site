@@ -8,9 +8,7 @@ import {
   Dropdown,
   NavItem,
   NavLink,
-  NavbarToggle,
   Offcanvas,
-  NavDropdown,
 } from "react-bootstrap";
 import LogoBlueBG from "../../public/Images/LogoBlueBG.png";
 import styles from "../../styles/NavBar.module.css";
@@ -41,6 +39,7 @@ export function NavBar() {
             <Navbar.Toggle
               aria-controls="offcanvasNavbar-expand-sm"
               id="navtoggle"
+              style={{ backgroundColor: "#4c546c" }}
             />
 
             <Navbar.Offcanvas
