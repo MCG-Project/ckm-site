@@ -4,11 +4,6 @@
   margin-left: 4rem;
 }
 
-#footerRight {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-
 #footerContainer {
   background-color: whitesmoke;
   height: 4.5rem;
@@ -20,4 +15,18 @@
 
 .main-blue-bg {
   background-color: #1c2850;
+}
+
+/* Mobile */
+#mobileFooterLogo {
+  height: 3rem;
+  width: 4rem;
+  /* margin-bottom: 2rem; */
+}
+
+#MobileFooterContainer {
+  background-color: whitesmoke;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
 }

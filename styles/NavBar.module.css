@@ -33,3 +33,8 @@
   border: #1c2850;
   color: white;
 }
+
+/* Mobile */
+#navtoggle {
+  background-color: #fff !important;
+}

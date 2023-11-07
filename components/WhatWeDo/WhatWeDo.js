@@ -1,31 +1,45 @@
 import React from "react";
-import { NavBar } from "../NavBar/NavBar";
-import { Footer } from "../Footer/Footer";
+import Image from "next/image";
+import useDeviceDetect from "../../utils/useDeviceDetect";
 import { StepCard } from "./StepCard";
-import { MetaTag } from "../MetaTag/MetaTag";
-import IMAGE from "../../../public/Images/Logo-WhiteSmokeBG.png";
-// import "../Styles/Styles.css";
-import { Container, Image } from "react-bootstrap";
+import LogoWhiteSmokeBG from "../../public/Images/LogoWhiteSmokeBG.png";
+import { Container, Button } from "react-bootstrap";
 import { secondaryContent } from "./WhatWeDoData";
+import styles from "../../styles/WhatWeDo.module.css";
 
 export function WhatWeDo() {
+  const { isMobile } = useDeviceDetect();
+
   return (
     <>
-      <MetaTag
-        title="CK&M | What We Do"
-        metaContent="This is a website"
-        image=""
-      />
-      <NavBar />
-      <div id="container">
-        <Container className="d-flex align-items-center flex-column">
-          <Image alt="Logo" src={IMAGE} style={{ height: "15rem" }}></Image>
+      {isMobile ? (
+        <div className="d-flex align-items-center flex-column">
+          <Image
+            alt="Logo"
+            src={LogoWhiteSmokeBG}
+            className={styles.mobileLogo}
+          ></Image>
           <StepCard />
+          <Button href="/contact" className="fw-bold" variant="dark">
+            Contact Us
+          </Button>
+          <p className="w-75 fs-5 mt-5">{secondaryContent}</p>
+        </div>
+      ) : (
+        // Browser
+        <Container className="d-flex align-items-center flex-column">
+          <Image
+            alt="Logo"
+            src={LogoWhiteSmokeBG}
+            className={styles.logo}
+          ></Image>
+          <StepCard />
+          <Button href="/contact" className="fw-bold" variant="dark">
+            Contact Us
+          </Button>
           <p className="w-75 fs-5 mt-5">{secondaryContent}</p>
         </Container>
-        <Container className="d-flex row w-75 m-auto mt-3"></Container>
-      </div>
-      <Footer />
+      )}
     </>
   );
 }

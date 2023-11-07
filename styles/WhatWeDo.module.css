@@ -11,3 +11,10 @@
   height: 3rem;
   color: #4c5874;
 }
+
+/* Mobile */
+.mobileLogo {
+  margin-top: 1rem;
+  height: 10rem;
+  width: 15rem;
+}
