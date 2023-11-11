@@ -2,7 +2,7 @@ import React from "react";
 import { MetaTag } from "../components/MetaTag/MetaTag";
 import { MetaTagSEOData } from "../components/MetaTag/SEOData";
 import { HomeMain } from "../components/Home/HomeMain";
-import { HomeVideo } from "../components/Home/HomeVideo";
+import { HomeBanner } from "../components/Home/HomeBanner";
 import { HomeCard } from "../components/Home/HomeCard";
 import { HomeAbout } from "../components/Home/HomeAbout";
 import HomeHeroImage from "../public/Images/HomeHeroImage.jpg";
@@ -12,16 +12,16 @@ export default function Home() {
   return (
     <>
       <MetaTag
-        tab={MetaTagSEOData[4].tab}
-        description={MetaTagSEOData[4].description}
-        keywords={MetaTagSEOData[4].keywords}
-        socialTitle={MetaTagSEOData[4].socialTitle}
-        socialDescription={MetaTagSEOData[4].socialDescription}
+        tab={MetaTagSEOData[3].tab}
+        description={MetaTagSEOData[3].description}
+        keywords={MetaTagSEOData[3].keywords}
+        socialTitle={MetaTagSEOData[3].socialTitle}
+        socialDescription={MetaTagSEOData[3].socialDescription}
         socialImage={HomeHeroImage}
       />
       <HomeHero />
       <HomeMain />
-      <HomeVideo />
+      <HomeBanner />
       <HomeCard />
       <HomeAbout />
     </>

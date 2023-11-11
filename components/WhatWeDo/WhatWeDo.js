@@ -4,7 +4,7 @@ import useDeviceDetect from "../../utils/useDeviceDetect";
 import { StepCard } from "./StepCard";
 import LogoWhiteSmokeBG from "../../public/Images/LogoWhiteSmokeBG.png";
 import { Container, Button } from "react-bootstrap";
-import { secondaryContent } from "./WhatWeDoData";
+import { secondaryContent, disclaimer } from "./WhatWeDoData";
 import styles from "../../styles/WhatWeDo.module.css";
 
 export function WhatWeDo() {
@@ -23,7 +23,9 @@ export function WhatWeDo() {
           <Button href="/contact" className="fw-bold" variant="dark">
             Contact Us
           </Button>
+
           <p className="w-75 fs-5 mt-5">{secondaryContent}</p>
+          <p className="w-50 mt-3">{disclaimer}</p>
         </div>
       ) : (
         // Browser
@@ -37,7 +39,9 @@ export function WhatWeDo() {
           <Button href="/contact" className="fw-bold" variant="dark">
             Contact Us
           </Button>
+
           <p className="w-75 fs-5 mt-5">{secondaryContent}</p>
+          <p className="w-50 mt-3">{disclaimer}</p>
         </Container>
       )}
     </>

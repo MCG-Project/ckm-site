@@ -1,7 +1,7 @@
 export const MetaTagSEOData = [
-  // Property Sales = 0
+  // Services = 0
   {
-    tab: "Property Sales",
+    tab: "Services",
     description:
       "CK&M Provides property sales for all types of real estate investments.",
     keywords: [
@@ -50,54 +50,8 @@ export const MetaTagSEOData = [
     socialDescription:
       "CK&M Provides property sales for all types of real estate investments.",
   },
-  //   foreclosures = 1
-  {
-    tab: "Foreclosures",
-    description:
-      "CK&M Provides property sales for all types of real estate investments, to include working with foreclosures.",
-    keywords: [
-      "Foreclosed Properties",
-      "Foreclosure Listings",
-      "Bank-owned Homes",
-      "Distressed Properties",
-      "Pre-Foreclosure Homes",
-      "Auctioned Foreclosures",
-      "REO Properties",
-      "Foreclosure Auctions",
-      "Foreclosure Sales",
-      "Foreclosure Process",
-      "Foreclosure Help",
-      "Foreclosure Investment",
-      "Foreclosure Information",
-      "Stop Foreclosure",
-      "Buying Foreclosed Homes",
-      "Foreclosure Homes for Sale",
-      "HUD Foreclosures",
-      "Government Foreclosures",
-      "Short Sales",
-      "Foreclosure Lawyers",
-      "Foreclosure Counseling",
-      "Foreclosure Prevention",
-      "Foreclosure Statistics",
-      "Foreclosure Assistance",
-      "Foreclosure Auction Sites",
-      "Investing in Foreclosed Properties",
-      "Foreclosure Cleanup Services",
-      "Foreclosure Buying Tips",
-      "Foreclosure Regulations",
-      "Avoiding Foreclosure",
-      "Foreclosure Investment Strategies",
-      "Foreclosure Financing",
-      "Foreclosure Market Trends",
-      "Foreclosure Legal Advice",
-      "REO Agents",
-      "Mortgage Default",
-    ],
-    socialTitle: "CK&M Property Services - Foreclosures",
-    socialDescription:
-      "CK&M Provides property sales for all types of real estate investments, to include working with foreclosures.",
-  },
-  //   contact us = 2
+
+  //   contact us = 1
   {
     tab: "Contact Us",
     description:
@@ -107,7 +61,7 @@ export const MetaTagSEOData = [
     socialDescription:
       "CK&M Provides property sales for all types of real estate investments. Contact us for more info!",
   },
-  //   more info = 3
+  //   more info = 2
   {
     tab: "More Info",
     description:
@@ -117,7 +71,7 @@ export const MetaTagSEOData = [
     socialDescription:
       "CK&M Provides property sales for all types of real estate investments. Contact us for more info!",
   },
-  //   home = 4
+  //   home = 3
   {
     tab: "Home",
     description:
@@ -127,7 +81,7 @@ export const MetaTagSEOData = [
     socialDescription:
       "CK&M Provides property sales for all types of real estate investments. Contact us for more info!",
   },
-  //   What we do = 5
+  //   What we do = 4
   {
     tab: "What We Do",
     description:
