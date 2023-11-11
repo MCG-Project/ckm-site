@@ -1,6 +1,6 @@
 import React from "react";
 import useDeviceDetect from "../../utils/useDeviceDetect";
-import { Card, CardGroup, Button } from "react-bootstrap";
+import { Container, Card, CardGroup, Button } from "react-bootstrap";
 import {
   faHouseChimneyCrack,
   faHouseCircleCheck,
@@ -13,17 +13,40 @@ export function HomeCard() {
 
   const homeCardGroup = [
     {
-      cardTitle: "Property Sales",
-      cardImage: faHouseCircleCheck,
+      cardTitle: "Vacant Properties",
+      cardImage: faHouseChimneyCrack,
       cardText:
-        "We offer quick and hassle-free property sales, ensuring you get cash in hand when you need it most.",
+        "Unlock the potential of vacant properties with our hassle-free solutions, providing fair, all-cash offers tailored to your needs.",
     },
     {
-      cardTitle: "Foreclosures",
-      cardImage: faHouseChimneyCrack,
-
+      cardTitle: "Troublesome Tenants",
+      cardImage: faHouseCircleCheck,
       cardText:
-        "We provide thorough due diligence, minimizing potential risks and ensuring you make informed decisions throughout the process",
+        "Say goodbye to tenant troubles. We specialize in navigating the challenges of troublesome tenants, offering straightforward solutions for a stress-free experience.",
+    },
+    {
+      cardTitle: "Inherited Properties",
+      cardImage: faHouseChimneyCrack,
+      cardText:
+        "Navigate the complexities of inherited estates effortlessly. Our fair, all-cash offers provide a seamless solution for unlocking value from inherited properties.",
+    },
+    {
+      cardTitle: "Fixer-Upper",
+      cardImage: faHouseChimneyCrack,
+      cardText:
+        "Transform your fixer-upper into cash. Our expertise ensures a fair, all-cash offer for properties in need of repair, making the selling process smooth and straightforward.",
+    },
+    {
+      cardTitle: "Unwanted Properties",
+      cardImage: faHouseChimneyCrack,
+      cardText:
+        "Turn unwanted properties into valuable assets. We specialize in providing fair, all-cash offers for real estate you no longer wish to keep, offering a simple and efficient solution.",
+    },
+    {
+      cardTitle: "Pre-Foreclosures",
+      cardImage: faHouseChimneyCrack,
+      cardText:
+        "Facing pre-foreclosure challenges? We provide tailored solutions with fair, all-cash offers to help you navigate the complexities and secure a stress-free resolution.",
     },
   ];
 
@@ -43,13 +66,13 @@ export function HomeCard() {
                   style={{ color: "#1c2850" }}
                 />
                 <Card.Body>
-                  <Card.Title class="fs-4 text-center">
+                  <Card.Title className="fs-4 text-center">
                     {item.cardTitle}
                   </Card.Title>
                   <Card.Text>{item.cardText}</Card.Text>
                   <Button
                     variant="link"
-                    className="fw-bold text-white link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                    className="fw-bold align-bottom text-white link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                   >
                     Contact Us
                   </Button>
@@ -60,8 +83,8 @@ export function HomeCard() {
         </CardGroup>
       ) : (
         // Browser
-        <div className="d-flex p-5">
-          <CardGroup className="d-flex justify-content-evenly w-100 row-cols-md-3">
+        <Container className="d-flex p-5">
+          <CardGroup className="d-flex row-cols-md-3">
             {homeCardGroup.map((item) => (
               <div className="d-flex justify-content-center col">
                 <Card
@@ -75,7 +98,7 @@ export function HomeCard() {
                     style={{ color: "#1c2850" }}
                   />
                   <Card.Body>
-                    <Card.Title class="fs-4 text-center">
+                    <Card.Title className="fs-4 text-center">
                       {item.cardTitle}
                     </Card.Title>
                     <Card.Text>{item.cardText}</Card.Text>
@@ -90,7 +113,7 @@ export function HomeCard() {
               </div>
             ))}
           </CardGroup>
-        </div>
+        </Container>
       )}
     </>
   );

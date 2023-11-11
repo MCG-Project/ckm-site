@@ -27,11 +27,11 @@ export default function MoreInfo() {
   return (
     <>
       <MetaTag
-        tab={MetaTagSEOData[3].tab}
-        description={MetaTagSEOData[3].description}
-        keywords={MetaTagSEOData[3].keywords}
-        socialTitle={MetaTagSEOData[3].socialTitle}
-        socialDescription={MetaTagSEOData[3].socialDescription}
+        tab={MetaTagSEOData[2].tab}
+        description={MetaTagSEOData[2].description}
+        keywords={MetaTagSEOData[2].keywords}
+        socialTitle={MetaTagSEOData[2].socialTitle}
+        socialDescription={MetaTagSEOData[2].socialDescription}
         socialImage={ContactHeroImage}
       />
       <MoreInfoMain />

@@ -4,17 +4,16 @@ import { MetaTag } from "../components/MetaTag/MetaTag";
 import { MetaTagSEOData } from "../components/MetaTag/SEOData";
 import ContactHeroImage from "../public/Images/ContactHeroImage.jpg";
 import { ContactMain } from "../components/Contact/ContactMain";
-import { Form, Button, InputGroup, Container } from "react-bootstrap";
 
 export default function Contact() {
   return (
     <>
       <MetaTag
-        tab={MetaTagSEOData[2].tab}
-        description={MetaTagSEOData[2].description}
-        keywords={MetaTagSEOData[2].keywords}
-        socialTitle={MetaTagSEOData[2].socialTitle}
-        socialDescription={MetaTagSEOData[2].socialDescription}
+        tab={MetaTagSEOData[1].tab}
+        description={MetaTagSEOData[1].description}
+        keywords={MetaTagSEOData[1].keywords}
+        socialTitle={MetaTagSEOData[1].socialTitle}
+        socialDescription={MetaTagSEOData[1].socialDescription}
         socialImage={ContactHeroImage}
       />
       <ContactMain />

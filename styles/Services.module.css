@@ -30,7 +30,8 @@
 }
 
 .mobileIcon {
-  height: 10rem;
+  height: 50px;
+  width: 50px;
   color: #4c5874;
   padding-right: 0.5rem;
 }

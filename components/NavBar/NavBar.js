@@ -1,15 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import useDeviceDetect from "../../utils/useDeviceDetect";
-import {
-  Navbar,
-  Nav,
-  Container,
-  Dropdown,
-  NavItem,
-  NavLink,
-  Offcanvas,
-} from "react-bootstrap";
+import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import LogoBlueBG from "../../public/Images/LogoBlueBG.png";
 import styles from "../../styles/NavBar.module.css";
 
@@ -46,28 +38,13 @@ export function NavBar() {
               id="offcanvasNavbar-expand-sm"
               aria-labelledby="offcanvasNavbar-expand-sm"
               placement="end"
+              className="w-50 h-25"
             >
               <Offcanvas.Header closeButton />
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/what-we-do">What We Do</Nav.Link>
-                  <Dropdown as={NavItem}>
-                    <Dropdown.Toggle
-                      as={NavLink}
-                      className="fs-6 fw-bold"
-                      style={{ padding: "8px" }}
-                    >
-                      Services
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                      <Dropdown.Item href="/property-sales">
-                        Property Sales
-                      </Dropdown.Item>
-                      <Dropdown.Item href="/foreclosures">
-                        Foreclosures
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
+                  <Nav.Link href="/services">Services</Nav.Link>
                   <Nav.Link href="/contact">Contact Us</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
@@ -88,29 +65,14 @@ export function NavBar() {
               </Nav.Link>
             </Nav>
             <ColoredLine />
-            <Dropdown as={NavItem}>
-              <Dropdown.Toggle
-                as={NavLink}
-                className="fs-6 fw-bold"
-                style={{ padding: "8px" }}
-                id={styles.link}
-              >
+
+            <Nav className="fs-6 fw-bold">
+              <Nav.Link href="/services" id={styles.link}>
                 Services
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="/property-sales">
-                  Property Sales
-                </Dropdown.Item>
-                <Dropdown.Item href="/foreclosures">Foreclosures</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+              </Nav.Link>
+            </Nav>
             <ColoredLine />
-            {/* <Nav className="fs-6 fw-bold">
-      <Nav.Link href="/reviews" id={styles.link}>
-        Reviews
-      </Nav.Link>
-    </Nav>
-    <ColoredLine /> */}
+
             <Nav className="fs-6 fw-bold">
               <Nav.Link href="/contact" id={styles.link}>
                 Contact Us

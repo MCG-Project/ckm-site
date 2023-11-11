@@ -1,11 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import useDeviceDetect from "../../utils/useDeviceDetect";
-import { Button, ListGroup } from "react-bootstrap";
+import { serviceData } from "./ServicesData";
+import PropertySalesImage from "../../public/Images/PropertySalesImage.jpg";
+import { Button, Container, ListGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/Services.module.css";
 
-export function Services(props) {
+export function ServicesMain() {
   const { isMobile } = useDeviceDetect();
 
   return (
@@ -13,20 +16,19 @@ export function Services(props) {
       {isMobile ? (
         <div className="d-flex align-items-center flex-column position-relative pb-5">
           <Image
-            src={props.image}
+            src={PropertySalesImage}
             className={styles.mobileCardBoxOverlay}
-            alt={props.altImage}
+            alt={serviceData[0].altImage}
           />
+          <Container>
+            <h1 className="mt-3 fw-bold text-center">{serviceData[0].title}</h1>
+            <p className=" mt-4 fs-5">{serviceData[0].mainContent}</p>
+          </Container>
 
-          <h1 className="mt-3 fw-bold">{props.title}</h1>
-          <p className="w-75 mt-4 fs-5">{props.mainContent}</p>
           <ListGroup className="w-75 mt-2">
-            {props.listContent.map((item) => (
+            {serviceData[0].listContent.map((item) => (
               <div className="d-flex align-items-start">
-                <FontAwesomeIcon
-                  icon={props.icon}
-                  className={styles.mobileIcon}
-                />
+                <FontAwesomeIcon icon={faCheck} className={styles.mobileIcon} />
                 <ListGroup.Item className={styles.mobileListItem}>
                   <strong> {item.title}</strong>
                   {item.content}
@@ -34,7 +36,9 @@ export function Services(props) {
               </div>
             ))}
           </ListGroup>
-          <p className="w-75 mt-4 text-center fs-5">{props.secondaryContent}</p>
+          <p className="w-75 mt-4 text-center fs-5">
+            {serviceData[0].secondaryContent}
+          </p>
           <Button href="/contact" className="fw-bold" variant="dark">
             Contact Us
           </Button>
@@ -43,9 +47,9 @@ export function Services(props) {
         // Browser
         <div className="d-flex align-items-center flex-column position-relative">
           <Image
-            src={props.image}
+            src={PropertySalesImage}
             className={styles.cardBoxOverlay}
-            alt={props.altImage}
+            alt={serviceData.altImage}
             style={{
               width: "100%",
               height: "50vh",
@@ -59,13 +63,15 @@ export function Services(props) {
               color: "#444654",
             }}
           >
-            {props.title}
+            {serviceData[0].title}
           </h1>
-          <p className="w-75 mt-4 text-center fs-5">{props.mainContent}</p>
+          <p className="w-75 mt-4 text-center fs-5">
+            {serviceData[0].mainContent}
+          </p>
           <ListGroup className="w-50 mt-2">
-            {props.listContent.map((item) => (
-              <div className="d-flex flex-row">
-                <FontAwesomeIcon icon={props.icon} className={styles.icon} />
+            {serviceData[0].listContent.map((item) => (
+              <div className="d-flex flex-row m-auto">
+                <FontAwesomeIcon icon={faCheck} className={styles.icon} />
                 <ListGroup.Item className={styles.listItem}>
                   <strong> {item.title}</strong>
                   {item.content}
@@ -73,7 +79,9 @@ export function Services(props) {
               </div>
             ))}
           </ListGroup>
-          <p className="w-75 mt-4 text-center fs-5">{props.secondaryContent}</p>
+          <p className="w-50 mt-4 text-center fs-5">
+            {serviceData[0].secondaryContent}
+          </p>
           <Button href="/contact" className="fw-bold" variant="dark">
             Contact Us
           </Button>
