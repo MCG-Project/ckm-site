@@ -2,8 +2,12 @@ import React from "react";
 import useDeviceDetect from "../../utils/useDeviceDetect";
 import { Container, Card, CardGroup, Button } from "react-bootstrap";
 import {
-  faHouseChimneyCrack,
+  faHouseCrack,
   faHouseCircleCheck,
+  faHouseUser,
+  faHouseCircleExclamation,
+  faHouseLock,
+  faHouseCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "../../styles/Home.module.css";
@@ -14,37 +18,37 @@ export function HomeCard() {
   const homeCardGroup = [
     {
       cardTitle: "Vacant Properties",
-      cardImage: faHouseChimneyCrack,
+      cardImage: faHouseCircleXmark,
       cardText:
         "Unlock the potential of vacant properties with our hassle-free solutions, providing fair, all-cash offers tailored to your needs.",
     },
     {
       cardTitle: "Troublesome Tenants",
-      cardImage: faHouseCircleCheck,
+      cardImage: faHouseUser,
       cardText:
         "Say goodbye to tenant troubles. We specialize in navigating the challenges of troublesome tenants, offering straightforward solutions for a stress-free experience.",
     },
     {
       cardTitle: "Inherited Properties",
-      cardImage: faHouseChimneyCrack,
+      cardImage: faHouseCircleCheck,
       cardText:
         "Navigate the complexities of inherited estates effortlessly. Our fair, all-cash offers provide a seamless solution for unlocking value from inherited properties.",
     },
     {
       cardTitle: "Fixer-Upper",
-      cardImage: faHouseChimneyCrack,
+      cardImage: faHouseCrack,
       cardText:
         "Transform your fixer-upper into cash. Our expertise ensures a fair, all-cash offer for properties in need of repair, making the selling process smooth and straightforward.",
     },
     {
       cardTitle: "Unwanted Properties",
-      cardImage: faHouseChimneyCrack,
+      cardImage: faHouseCircleExclamation,
       cardText:
         "Turn unwanted properties into valuable assets. We specialize in providing fair, all-cash offers for real estate you no longer wish to keep, offering a simple and efficient solution.",
     },
     {
       cardTitle: "Pre-Foreclosures",
-      cardImage: faHouseChimneyCrack,
+      cardImage: faHouseLock,
       cardText:
         "Facing pre-foreclosure challenges? We provide tailored solutions with fair, all-cash offers to help you navigate the complexities and secure a stress-free resolution.",
     },
