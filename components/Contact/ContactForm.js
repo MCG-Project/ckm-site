@@ -79,8 +79,8 @@ export function ContactForm() {
       contactForm.contact_number.value = (Math.random() * 100000) | 0;
 
       try {
-        emailjs.init("OFERgPtPZrXndL-iq");
-
+        emailjs.init(process.env.EMAILJS_KEY);
+        console.log(process.env.EMAILJS_KEY);
         const response = await emailjs.sendForm(
           "service_pb0eohg",
           "template_qq9bab7",
