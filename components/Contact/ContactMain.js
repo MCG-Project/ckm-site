@@ -25,7 +25,7 @@ export function ContactMain() {
           <Container className="d-flex flex-column">
             <h1 className="mt-3 fw-bold text-center">Contact Us</h1>
             <p className="mb-3 fw-bold text-center">
-              (706)-814-4848 | ckmpropserv@outlook.com
+              (706)-814-4848 | chris@ckmpropertyservices.com
             </p>
           </Container>
         </>
@@ -45,7 +45,7 @@ export function ContactMain() {
           <Container className="d-flex align-items-center flex-column">
             <h1 className="mt-3 fw-bold">Contact Us</h1>
             <h3 className="mb-3 fw-bold">
-              (706)-814-4848 | Christian.Krausnick@gmail.com
+              (706)-814-4848 | chris@ckmpropertyservices.com
             </h3>
           </Container>
         </>
