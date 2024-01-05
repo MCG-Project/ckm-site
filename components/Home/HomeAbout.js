@@ -19,33 +19,27 @@ export function HomeAbout() {
   return (
     <>
       {isMobile ? (
-        <div className="d-flex flex-column pt-5 pb-3" id={styles.blue}>
+        <div className="d-flex flex-column pt-5 pb-3">
           <Container className="d-flex justify-content-center">
             <Image src={Home1} className={styles.mobileImage} />
           </Container>
           <Container>
-            <p className="fw-bold pt-3 fs-4 text-white text-center">
+            <p className="fw-bold pt-3 fs-4 text-center">
               {homeAboutData[0].aboutName}
             </p>
-            <p className=" p-2 fs-5 text-white">
-              {homeAboutData[0].aboutContent}
-            </p>
+            <p className=" p-2 fs-5">{homeAboutData[0].aboutContent}</p>
           </Container>
         </div>
       ) : (
         // Browser
-        <div className="d-flex flex-column p-5" id={styles.blue}>
+        <div className="d-flex flex-column p-5">
           <div className="d-flex align-items-center">
             <Container className="d-flex justify-content-around">
               <Image src={Home1} className={styles.image} />
             </Container>
             <Container>
-              <p className="w-75 fw-bold fs-4 text-white">
-                {homeAboutData[0].aboutName}
-              </p>
-              <p className="w-75 fs-5 text-white">
-                {homeAboutData[0].aboutContent}
-              </p>
+              <p className="w-75 fw-bold fs-4">{homeAboutData[0].aboutName}</p>
+              <p className="w-75 fs-5">{homeAboutData[0].aboutContent}</p>
             </Container>
           </div>
         </div>

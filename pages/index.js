@@ -4,6 +4,7 @@ import { MetaTagSEOData } from "../components/MetaTag/SEOData";
 import { HomeMain } from "../components/Home/HomeMain";
 import { HomeBanner } from "../components/Home/HomeBanner";
 import { HomeCard } from "../components/Home/HomeCard";
+import { HomeReview } from "../components/Home/HomeReview";
 import { HomeAbout } from "../components/Home/HomeAbout";
 import HomeHeroImage from "../public/Images/HomeHeroImage.jpg";
 import { HomeHero } from "../components/Home/HomeHero";
@@ -23,6 +24,7 @@ export default function Home() {
       <HomeMain />
       <HomeBanner />
       <HomeCard />
+      <HomeReview />
       <HomeAbout />
     </>
   );
